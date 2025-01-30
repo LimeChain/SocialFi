@@ -1,50 +1,130 @@
-# Welcome to your Expo app 👋
+# SocialFi Mobile App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A proof-of-concept (POC) mobile application built with React Native and Expo, demonstrating a social-focused DeFi platform on Solana. While the core functionality is implemented, the UI/UX requires further refinement and polishing for production use.
 
-## Get started
+## Visual Documentation
 
-1. Install dependencies
+### App Flow
+
+<p align="center">
+  <img src="docs/videos/app-flow.gif" width="300" alt="SocialFi App Flow"/>
+</p>
+
+> Demo of the main app functionality including wallet connection, token trading, and presale management.
+
+## Overview
+
+SocialFi combines social networking features with decentralized finance capabilities, allowing users to:
+
+- Launch personal tokens
+- Trade tokens through DEX integration
+- Participate in presales
+- Build social capital through engagement
+- Track trending tokens and social metrics
+
+## Technical Stack
+
+- **Framework**: React Native with Expo
+- **Styling**: NativeWind (TailwindCSS for React Native) with custom theme and refined component design
+- **Navigation**: Expo Router
+- **State Management**: Zustand
+- **Blockchain**: Solana Web3.js
+- **DEX Integration**: Jupiter SDK
+- **Authentication**: Solana Mobile Wallet Adapter
+
+## Design Features
+
+- Consistent dark/light theme support
+- Custom animated components
+- Polished UI transitions
+- Responsive layouts
+- Native platform design considerations
+
+## Key Features
+
+### Token Trading
+
+- Token swap interface
+- Price charts and trading signals
+- Jupiter DEX integration (mocked)
+- Token selection with search functionality
+
+### Token Launch Platform
+
+- Custom token creation
+- Bonding curve configuration
+- Initial liquidity settings
+- Token distribution parameters
+
+### Presale Management
+
+- Configurable presale parameters
+- Dynamic vesting schedule visualization
+- Whitelist management
+- Progress tracking
+
+### Social Features
+
+- Social score calculation
+- Activity feed
+- Follow/unfollow functionality
+- Profile management
+
+## Mocked Functionality
+
+Currently, the following features are mocked for demonstration:
+
+- Blockchain transactions
+- Token balances and prices
+- User profiles and social interactions
+- Trading history and signals
+- DEX liquidity data
+
+## Development Setup
+
+1. Install dependencies:
 
    ```bash
    npm install
    ```
 
-2. Start the app
+2. Start the development server:
 
    ```bash
-    npx expo start
+   npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+3. Run on platform:
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- iOS: Press 'i' in terminal
+- Android: Press 'a' in terminal
+- Web: Press 'w' in terminal
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Project Structure
 
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```
+app/
+├── (tabs)/           # Main tab screens
+├── components/       # Reusable components
+├── providers/        # Context providers
+├── stores/          # Zustand stores
+├── utils/           # Helper functions
+└── screens/         # Additional screens
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Future Improvements
 
-## Learn more
+- Real Solana blockchain integration
+- Jupiter DEX API implementation
+- Social graph implementation
+- Token analytics integration
+- Enhanced security features
+- Performance optimizations
 
-To learn more about developing your project with Expo, look at the following resources:
+## Contributing
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+This is a proof-of-concept project. Feel free to fork and extend the functionality.
 
-## Join the community
+## License
 
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+MIT
